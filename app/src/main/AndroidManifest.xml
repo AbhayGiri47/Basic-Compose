@@ -13,15 +13,57 @@
         android:theme="@style/Theme.HappyBirthday"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ComposeQuadrantActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_compose_quadrant"
             android:theme="@style/Theme.HappyBirthday">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TaskManagerCompleteScreen"
+            android:exported="false"
+            android:label="@string/title_activity_task_manager_complete_screen"
+            android:theme="@style/Theme.HappyBirthday">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ComposeArticle2"
+            android:exported="true"
+            android:label="@string/title_activity_compose_article2"
+            android:theme="@style/Theme.HappyBirthday">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.HappyBirthday">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
 
             <meta-data
                 android:name="android.app.lib_name"
