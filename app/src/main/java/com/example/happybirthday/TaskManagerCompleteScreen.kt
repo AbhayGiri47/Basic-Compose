@@ -29,7 +29,7 @@ class TaskManagerCompleteScreen : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    TaskManagerCompleteScreenApp()
                 }
             }
         }
@@ -42,34 +42,40 @@ class TaskManagerCompleteScreen : ComponentActivity() {
 fun DefaultPreview2() {
     HappyBirthdayTheme {
 
-        Column(
+        TaskManagerCompleteScreenApp()
+
+    }
+}
+
+@Composable
+fun TaskManagerCompleteScreenApp() {
+    Column(
+        modifier = Modifier
+            .fillMaxHeight()
+            .fillMaxWidth(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+        ComposeImage(
+            painter = painterResource(id = R.drawable.ic_task_completed),
+            ContentScale.None
+        )
+        ComposeText(
+            message = stringResource(R.string.all_tasks_completed),
             modifier = Modifier
-                .fillMaxHeight()
-                .fillMaxWidth(),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
+                .padding(0.dp, 24.dp, 0.dp, 8.dp),
+            fontSize = 14.sp,
+            textALign = TextAlign.Start,
+            FontWeight.Bold
+        )
+        ComposeText(
+            message = stringResource(R.string.nice_work),
+            modifier = Modifier,
+            fontSize = 16.sp,
+            textALign = TextAlign.Start,
+            fontweight = FontWeight.Normal
+        )
 
-            ComposeImage(
-                painter = painterResource(id = R.drawable.ic_task_completed),
-                ContentScale.None
-            )
-            ComposeText(
-                message = stringResource(R.string.all_tasks_completed),
-                modifier = Modifier
-                    .padding(0.dp, 24.dp, 0.dp, 8.dp),
-                fontSize = 14.sp,
-                textALign = TextAlign.Start,
-                FontWeight.Bold
-            )
-            ComposeText(
-                message = stringResource(R.string.nice_work),
-                modifier = Modifier,
-                fontSize = 16.sp,
-                textALign = TextAlign.Start,
-                fontweight = FontWeight.Normal
-            )
-
-        }
     }
 }
