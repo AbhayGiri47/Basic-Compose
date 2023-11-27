@@ -17,11 +17,11 @@
             android:exported="true"
             android:label="@string/title_activity_business_card"
             android:theme="@style/Theme.HappyBirthday">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -32,7 +32,7 @@
             android:exported="true"
             android:label="@string/title_activity_compose_quadrant"
             android:theme="@style/Theme.HappyBirthday">
-           <!-- <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -47,6 +47,7 @@
             android:exported="false"
             android:label="@string/title_activity_task_manager_complete_screen"
             android:theme="@style/Theme.HappyBirthday">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -75,13 +76,11 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.HappyBirthday">
 
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
 
             <meta-data
                 android:name="android.app.lib_name"
